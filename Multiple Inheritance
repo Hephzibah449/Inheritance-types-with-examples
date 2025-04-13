@@ -1,0 +1,25 @@
+interface Musician {
+    void playInstrument();
+}
+
+interface Athlete {
+    void playSport();
+}
+
+class Student implements Musician, Athlete {
+    public void playInstrument() {
+        System.out.println("Plays guitar");
+    }
+
+    public void playSport() {
+        System.out.println("Plays soccer");
+    }
+}
+
+public class MultipleInheritance {
+    public static void main(String[] args) {
+        Student hepzibah = new Student();
+        hepzibah.playInstrument();
+        hepzibah.playSport();
+    }
+}
