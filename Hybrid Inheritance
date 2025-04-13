@@ -1,26 +1,37 @@
 class Animal {
-    void breathe() {
-        System.out.println("Animal breathes");
+    void sleep() {
+        System.out.println("Animal eats");
     }
 }
 
-class Mammal extends Animal {
-    void feedMilk() {
-        System.out.println("Mammal feeds milk");
+interface Terrestrial {
+    void walk();
+}
+
+interface Aquatic {
+    void swim();
+}
+
+class Frog extends Animal implements Terrestrial, Aquatic {
+    public void walk() {
+        System.out.println("crocodile walks");
+    }
+
+    public void swim() {
+        System.out.println("crocodile swims");
+    }
+
+    void grunt() {
+        System.out.println("crocodile grunt");
     }
 }
 
-class Cat extends Mammal {
-    void meow() {
-        System.out.println("Cat meows");
-    }
-}
-
-public class MultilevelInheritance {
+public class HybridInheritance {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat.breathe();
-        cat.feedMilk();
-        cat.meow();
+       crocodile crocs = new Frog();
+        crocs.eats();
+        crocs.walk();
+        crocs.swim();
+        crocs.grunt();
     }
 }
