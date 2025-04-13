@@ -45,9 +45,9 @@ class Teacher extends Person {
 
 public class Main {
     public static void main(String[] args) {
-        // Create a Student object for Hepzibah
-        Student hepzibah = new Student("Hepzibah", 20, "2302086");
-        hepzibah.displayStudentInfo();
+        // Create a Student object for Hephzibah
+        Student hephzibah = new Student("Hephzibah", 20, "2302086");
+        hephzibah.displayStudentInfo();
         
         // Create a Teacher object
         Teacher teacher = new Teacher("Mr. Abraham", 45, "Math");
